@@ -1,13 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ShitList from "./components/shit/ShitList";
 
 import "./styles.css";
-
+const shitList = [
+  {
+    name: "That Person",
+    rating: 4
+  },
+  {
+    name: "Other Person",
+    rating: 3
+  }
+];
 function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <ShitList list={shitList} />
     </div>
   );
 }
