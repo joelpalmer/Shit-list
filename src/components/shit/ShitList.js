@@ -9,11 +9,21 @@ export default class ShitList extends Component {
   render() {
     return (
       <div>
-        <ul>
-          {this.props.list.map((item, index) => {
-            return <ShitListItem key={index} item={item.name} />;
-          })}
-        </ul>
+        <table className="table">
+          <th>Item</th>
+          <th>Rating</th>
+          <tbody>
+            {this.props.list.map((item, index) => {
+              return (
+                <ShitListItem
+                  key={index}
+                  name={item.name}
+                  rating={item.rating}
+                />
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     );
   }

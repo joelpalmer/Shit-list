@@ -6,6 +6,11 @@ export default class ShitListItem extends Component {
     super(props);
   }
   render() {
-    return <li>{this.props.item}</li>;
+    return (
+      <tr>
+        <td>{this.props.name}</td>
+        <td>{this.props.rating}</td>
+      </tr>
+    );
   }
 }

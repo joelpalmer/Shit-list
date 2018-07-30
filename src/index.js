@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ShitList from "./components/shit/ShitList";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 const shitList = [
   {
@@ -15,7 +15,7 @@ const shitList = [
 ];
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <ShitList list={shitList} />
     </div>
   );
